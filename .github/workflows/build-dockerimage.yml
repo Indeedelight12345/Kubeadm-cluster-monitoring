@@ -93,6 +93,5 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker tag local-scan:${{ github.ref_name }} \
-                     ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:${{ github.ref_name }}
+         
           docker push ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:${{ github.ref_name }}
