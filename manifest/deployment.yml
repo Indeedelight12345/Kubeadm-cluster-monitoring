@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myclone-netflix-app
+  labels:
+    app: myclone-netflix-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: myclone-netflix-app
+  template:
+    metadata:
+      labels:
+        app: myclone-netflix-app
+    spec:
+      containers:
+      - name: myclone-netflix-app
+        image: rukevweubio/myclone-netflix-app:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
