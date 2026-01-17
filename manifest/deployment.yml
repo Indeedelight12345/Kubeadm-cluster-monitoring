@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: myclone-netflix-app
-        image: rukevweubio/myclone-netflix-app:latest
+        image: rukevweubio/mycryptobot-app:v2.0.2 
         imagePullPolicy: Always
         ports:
         - containerPort: 80
