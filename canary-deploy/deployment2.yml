@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mycryptobot-v1
+  namespace: canary-deploy
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: mycryptobot
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: mycryptobot
+        version: v1
+    spec:
+      containers:
+        - name: mycryptobot
+          image: rukevweubio/mycryptobot-app:v2.0.2
+          ports:
+            - containerPort: 80

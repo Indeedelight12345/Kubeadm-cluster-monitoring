@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mycryptobot-green
+  namespace: blue-green
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mycryptobot
+      color: green
+  template:
+    metadata:
+      labels:
+        app: mycryptobot
+        color: green
+    spec:
+      containers:
+        - name: mycryptobot
+          image: rukevweubio/mycryptobot-app:v2.0.2
+          ports:
+            - containerPort: 80
