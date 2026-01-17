@@ -51,4 +51,5 @@ variable "ssh_user" {
 variable "ssh_public_key" {
   description = "Public SSH key content"
   type        = string
+  default = "~/.ssh/id_rsa.pub"
 }
