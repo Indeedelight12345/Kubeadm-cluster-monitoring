@@ -173,9 +173,11 @@ linkerd viz install | kubectl apply -f -
 linkerd viz dashboard &
 ```
 ### CI/CD with GitHub Actions & ArgoCD
-* install argocd  on teh   cluster
+* install argocd  on the  cluster
 *  create a file GitHub Actions workflow (.github/workflows/build-push.yml):
 *   build Docker image, push to Docker Hub.
+
+  ![argocd service](https://github.com/Indeedelight12345/GitOps-Based-Kubernetes-Deployment-on-Google-with-Argo-CD/blob/main/picture/Screenshot%202026-01-09%20at%2018.19.36.png)
 
   
 ```
