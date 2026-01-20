@@ -206,8 +206,9 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 *  ensure the docker image   and tag is correct
 *  
 
-![argocd  deployment](https://github.com/Indeedelight12345/GitOps-Based-Kubernetes-Deployment-on-Google-with-Argo-CD/blob/main/picture/Screenshot%202026-01-09%20at%2019.34.34.png)
-  ```
+![argocd  deployment](https://github.com/Indeedelight12345/GitOps-Based-Kubernetes-Deployment-on-Google-with-Argo-CD/blob/main/picture/Screenshot%202026-01-09%20at%2019.33.12.png)
+
+```
 apiVersion: apps/v1
 kind: Deployment
 metadata:
